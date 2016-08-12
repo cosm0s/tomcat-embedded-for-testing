@@ -41,5 +41,7 @@ public class TomcatEmbeddedTest {
         driver.get("http://localhost:8080/showcase-6.0/");
         WebElement element = driver.findElement(By.id("LOGOTEXTSIDE")).findElement(By.className("logoBlueText"));
         assertTrue("Showcase is down", element.getText().equals("SHOWCASE"));
+        driver.quit();
     }
+
 }
